@@ -1,13 +1,23 @@
+b{
+	text-align: center;
+}
 p{
 	text-align: left;
 }
-
 body{
         font-family: arial;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center; 
+        background-image: url(" ../assets/img/background.jpg");
+
     }
 img{
-        width: 240px;
+        width: 270px;
     }
 
+.utama{
+	width: 650px;
+	float: left;
+    margin-left: 40px;
+    padding: 20px;
+}

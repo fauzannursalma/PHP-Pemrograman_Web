@@ -21,12 +21,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan5c</title>
     <link rel="stylesheet" href=" ../css/style.css">
+    <link type="text/css" rel="stylesheet" href=" ../css/materialize.min.css"  media="screen,projection"/>
+
 </head>
 <body>
    
        <!--  sumber : http://www.bukabuku.com/ -->
-<table border="1px" cellpadding ="8px" cellspacing="0">
-    <tr>
+<div class="utama">
+    <div class="card">
+<table border="1px" cellpadding ="6px" cellspacing="0" class="responsive-table">
         <td><b>Cover</b></td>
         <td colspan="2"><b>Keterangan</b></td>
     </tr>
@@ -56,10 +59,11 @@
     </tr>
   </div>
     <tr>
-    	<td colspan="3"><button class="tombol-kembali"><a href="../index.php">Kembali</a></button></td>
+    	<td colspan="3"><a href="../index.php" class="waves-effect waves-light blue darken-4 btn-small"> Kembali</a></td>
     </tr>
-
 </table>
+    </div>
+</div>
         
 </body>
 </html>
