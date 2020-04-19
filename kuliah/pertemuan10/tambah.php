@@ -69,7 +69,9 @@ if (isset($_POST['tambah'])) {
                 </label>
               </tr>
               <tr>
-                <td colspan="3"><button type="submit" name="tambah" class="waves-effect waves-light blue darken-4 btn-large">Tambah Data!</button></td>
+                <td colspan="2"><a href="latihan3.php" class="waves-effect waves-light red darken-4 btn-large"> Kembali</a></td>
+                </td>
+                <td><button type="submit" name="tambah" class="waves-effect waves-light blue darken-4 btn-large right">Tambah Data!</button></td>
               </tr>
             </form>
           </table>
