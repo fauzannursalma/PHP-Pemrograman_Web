@@ -12,23 +12,52 @@ $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Detail Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body>
-  <table border="1px" cellpadding="8px" cellspacing="0">
-    <tr>
-      <td><img src="img/<?= $mhs['foto']; ?>" width="85" height="120"></td>
-      <td>Nama :<?= $mhs['nama']; ?></td>
-      <td>NRP :<?= $mhs['nrp']; ?></td>
-      <td>Jurusan :<?= $mhs['jurusan']; ?></td>
-      <td>Email :<?= $mhs['email']; ?></td>
-      <td><a href="">Ubah</a> | <a href="">Hapus</a></td>
-      <td>
-        <a href="latihan3.php">Kembali ke daftar mahasiswa</a>
-      </td>
-
-  </table>
+  <div class="container">
+    <h3 class="light center Black-text">Detail Mahasiswa</h3>
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="tabel">
+          <table border="1px" cellpadding="8px" cellspacing="0" class="striped">
+            <tr>
+              <td class="center" colspan="3"><img src="img/<?= $mhs['foto']; ?>" width="280" height="340"></td>
+            </tr>
+            <tr>
+              <td>Nama</td>
+              <td>:</td>
+              <td><?= $mhs['nama']; ?></td>
+            </tr>
+            <tr>
+              <td>NRP</td>
+              <td>:</td>
+              <td><?= $mhs['nrp']; ?></td>
+            </tr>
+            <tr>
+              <td>Jurusan</td>
+              <td>:</td>
+              <td><?= $mhs['jurusan']; ?></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>:</td>
+              <td><?= $mhs['email']; ?></td>
+            </tr>
+            <tr>
+              <td colspan="3"><a href="" class="waves-effect waves-light blue darken-4 btn-small">Ubah</a>
+                <a href="" class="waves-effect waves-light red darken-4 btn-small">Hapus</a></td>
+            </tr>
+            <tr>
+              <td colspan="3"><a href="latihan3.php" class="waves-effect waves-light blue darken-4 btn-small"> Kembali Ke Daftar Mahasiswa</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
 
 </body>
 

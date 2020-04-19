@@ -20,48 +20,61 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Tambah Data</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body>
-  <h3>Form Tambah Data Mahasiswa</h3>
-  <form action="" method="POST">
-    <ul>
-      <li>
-        <label>
-          Nama :
-          <input type="text" name="nama" autofocus required>
-        </label>
-      </li>
-      <li>
-        <label>
-          NRP :
-          <input type="text" name="nrp" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Jurusan :
-          <input type="text" name="jurusan" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Email :
-          <input type="text" name="email" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Foto :
-          <input type="text" name="foto" required>
-        </label>
-      </li>
-      <li>
-        <button type="submit" name="tambah">Tambah Data!</button>
-      </li>
-    </ul>
-  </form>
-
+  <div class="container">
+    <h3 class="light center Black-text">Form Tambah Data Mahasiswa</h3>
+    <br><br><br><br>
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="tabel">
+          <table border="1px" cellpadding="8px" cellspacing="0" class="striped">
+            <form action="" method="POST">
+              <tr>
+                <label>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" name="nama" autofocus required></td>
+                </label>
+              </tr>
+              <tr>
+                <label>
+                  <td>NRP</td>
+                  <td>:</td>
+                  <td><input type="text" name="nrp" required></td>
+                </label>
+              </tr>
+              <tr>
+                <label>
+                  <td>Jurusan</td>
+                  <td>:</td>
+                  <td><input type="text" name="jurusan" required></td>
+                </label>
+              </tr>
+              <tr>
+                <label>
+                  <td>Email</td>
+                  <td>:</td>
+                  <td><input type="text" name="email" required></td>
+                </label>
+              </tr>
+              <tr>
+                <label>
+                  <td>Foto</td>
+                  <td>:</td>
+                  <td><input type="text" name="foto" required></td>
+                </label>
+              </tr>
+              <tr>
+                <td colspan="3"><button type="submit" name="tambah" class="waves-effect waves-light blue darken-4 btn-large">Tambah Data!</button></td>
+              </tr>
+            </form>
+          </table>
+        </div>
+      </div>
 </body>
 
 </html>
