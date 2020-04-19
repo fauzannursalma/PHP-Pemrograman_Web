@@ -35,9 +35,10 @@ $mahasiswa = $rows;
             <th>Email</th>
             <th>Aksi</th>
         </tr>
-        <?php foreach ($mahasiswa as $mhs) : ?>
+        <?php $i = 1;
+        foreach ($mahasiswa as $mhs) : ?>
             <tr>
-                <td><?= $mhs['id']; ?></td>
+                <td><?= $i++; ?></td>
                 <td><img src="img/<?= $mhs['foto']; ?>" width="85" height="120"></td>
                 <td><?= $mhs['nama']; ?></td>
                 <td><?= $mhs['nrp']; ?></td>
