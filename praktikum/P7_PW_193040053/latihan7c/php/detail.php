@@ -22,71 +22,74 @@
     <title><?= $buku["judul"];?></title>
     <link rel="stylesheet" href=" ../css/style.css">
     <link type="text/css" rel="stylesheet" href=" ../css/materialize.min.css"  media="screen,projection"/>
+    <style type="text/css">
+        img {
+            width: 150px;
+        }
+    </style>
 
 </head>
 <body>
-   
-       <!--  sumber : http://www.bukabuku.com/ --> 
-    <div class="row">
-      <div class="col s8">
-        <div class="card">
-            <div class="card-content">
-            <table border="1px" cellpadding ="6px" cellspacing="0" class="responsive-table">
-        <th><b>Cover</b></th>
-        <th colspan="3"><b>Keterangan</b></th>
-    </tr>
-    <tr>
-        <td rowspan="8"><img src="../assets/img/<?= $buku["cover"]; ?>" alt=""></td>
-    </tr>
-  <div class="keterangan">
-    <tr>
-        <td><p>Judul Buku</p></td>
-        <td>:</td>
-        <td><p><?= $buku["judul"];?></p></td></td>  
-    </tr>
-    <tr>
-        <td><p>Pengarang</p></td>
-        <td>:</td>
-        <td><p><?= $buku["pengarang"];?></p></td>
-    </tr>
-    <tr>
-        <td><p>Penerbit</p></td>
-        <td>:</td>
-        <td><p><?= $buku["penerbit"];?></p></td>
-    </tr>
-    <tr>
-        <td><p>Tahun Terbit</p></td>
-        <td>:</td>
-        <td><p><?= $buku["tahun_terbit"];?></p></td> 
-    </tr>
-    <tr>
-        <td><p>Harga</p></td>
-        <td>:</td>
-        <td><p><?= $buku["harga"];?></p></td>
-    </tr>
-  </div>
-    <tr>
-        <td colspan="4"><a href="../index.php" class="waves-effect waves-light blue darken-4 btn-small right"> Kembali</a></td>
-    </tr>
-</table>
-</div> 
-</div>          
-    </div>
-    <div class="col s4">
-            <div class="row">
-                <div class="col s12 m12">
-                    <div class="card blue darken-1">
-                        <div class="card-content white-text">
-                            <span class="card-title">Deskripsi</span>
-                            <p><?= $buku["sinopsis"];?></p>
-                        </div>
-                    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col m6 s12">
+                <div class="card">
+                <div class="card-content">
+                <table border="1px" cellpadding ="6px" cellspacing="0" class="responsive-table">
+                    <th><b>Cover</b></th>
+                    <th colspan="3"><b>Keterangan</b></th>
+                <tr>
+                    <td rowspan="6">
+                        <img class="responsive-img materialboxed" src="../assets/img/<?= $buku["cover"]; ?>" alt="" >
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Judul Buku</p></td>
+                    <td>:</td>
+                    <td><p><?= $buku["judul"];?></p></td></td>  
+                </tr>
+                <tr>
+                    <td><p>Pengarang</p></td>
+                    <td>:</td>
+                    <td><p><?= $buku["pengarang"];?></p></td>
+                </tr>
+                <tr>
+                    <td><p>Penerbit</p></td>
+                    <td>:</td>
+                    <td><p><?= $buku["penerbit"];?></p></td>
+                </tr>
+                <tr>
+                    <td><p>Tahun Terbit</p></td>
+                    <td>:</td>
+                    <td><p><?= $buku["tahun_terbit"];?></p></td> 
+                </tr>
+                <tr>
+                    <td><p>Harga</p></td>
+                    <td>:</td>
+                    <td><p><?= $buku["harga"];?></p></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><a href="../index.php" class="waves-effect waves-light red darken-4 btn-small right"> Kembali</a></td>
+                </tr>
+                </table>
+                </div> 
+            </div>
+                
+            </div>
+            <div class="col m6 s12">
+                <div class="card grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title  center"><?= $buku["judul"];?></span>
+                    <p>Deskripsi : </p>
+                    <p><?= $buku["sinopsis"];?></p>
+                </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
+   
+       <!--  sumber : http://www.bukabuku.com/ --> 
+
 
 
 </body>
