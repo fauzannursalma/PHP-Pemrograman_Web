@@ -20,6 +20,7 @@ if (isset($_GET['cari'])){
 <html>
 <head>
 	<title>Halaman Admin</title>
+	<link rel="icon" type="image/png" href="../assets/index/1.png">
 	<link rel="stylesheet" href=" ../css/style.css">
 	<link type="text/css" rel="stylesheet" href=" ../css/materialize.min.css"  media="screen,projection"/>
 	<!--Import Google Icon Font-->
@@ -62,7 +63,7 @@ if (isset($_GET['cari'])){
 			</li>
 			<li><a href="#!" class="subheader"><i class="material-icons">person_outline</i>Halaman Admin</a></li>
     		<li><a href="#buku"><i class="material-icons">collections_bookmark</i>Daftar Buku</a></li>
-    		<li><a href="tambah.php"><i class="material-icons">add</i>Tambah</a></li>
+    		<li><a href="tambah.php"><i class="material-icons">add</i>Tambah Buku</a></li>
     		<li><a class="waves-effect" href="logout.php">Logout<i class="material-icons right">exit_to_app</i></a></li>
     	</ul>
   	</div>

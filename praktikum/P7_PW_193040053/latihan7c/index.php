@@ -22,7 +22,8 @@ if (isset($_GET['cari'])){
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="icon" type="image/png" href="img/icon/1.png">
+      <title>Prometheus</title>
+      <link rel="icon" type="image/png" href="assets/index/1.png">
       <style>
         .services img{
           width: 60px;
@@ -57,7 +58,6 @@ if (isset($_GET['cari'])){
           margin-top: -20px;
         }
       </style>
-      <title>Prometheus</title>
     </head>
 
     <body id="home" class="scrollspy">
@@ -159,7 +159,7 @@ if (isset($_GET['cari'])){
         <div class="col s12 m4">
           <div class="card medium">
             <div class="card-image">
-              <img src="assets/img/<?= $b['cover']; ?>" class="responsive-img materialboxed">
+              <img src="assets/img/<?= $b['cover']; ?>" class="responsive-img">
             </div>
             <div class="card-content">
               <p class="buku center"><?= $b['judul']; ?>
@@ -177,21 +177,27 @@ if (isset($_GET['cari'])){
 </div>
 </section>
 <!-- contact us -->
-<section id="contact" class="contact scrollspy grey darken-2">
+<section id="contact" class="contact scrollspy grey darken-3">
   <div class="container">
-    <h3 class="light white-text center"> Contact Us</h3>
-    <br><br>
+    <h3 class="light white-text center"> Contact Us</h3><br>
     <div class="row">
       <div class="col m5 s12">
-        <div class="card-panel black  center white-text">
-          <i class="small material-icons contact">email</i>
-          <h5>Contact</h5>
-          <div class="contact left-align">
-          <p><i class="tiny material-icons contact">email</i> 193040053@mail.unpas.ac.id</p>
-          <p><i class="tiny material-icons contact">call</i> 08981284297</p>
+        <div class="card-panel blue darken-3 white-text">
+          <h4 class="center">Contact</h4><br>
+          <p ><i class="tiny material-icons contact">email</i> 193040053@mail.unpas.ac.id</p>
+          <p><i class="tiny material-icons contact">call</i> 0812345678</p>
         </div>
-      </div> 
     </div>
+    <div class="col m7 s12">
+      <div class="card-panel">
+      <ul class="collection with-header">
+          <li class="collection-header center"><h4>Our Store</h4></li>
+          <li class="collection-item">Prometheus Books Store, LOZ.inc</li>
+         <li class="collection-item">Jl. Merdeka no. 205</li>
+          <li class="collection-item">West Java, Indonesia</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- footer -->

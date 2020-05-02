@@ -57,6 +57,7 @@ if (isset($_POST['submit'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halaman Login</title>
+  <link rel="icon" type="image/png" href="../assets/index/1.png">
   <!-- Import google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <!--Import materialize.css-->
@@ -101,7 +102,7 @@ if (isset($_POST['submit'])){
             <form action="" method="POST">
             <div class="form-field">
               <label for="username">Username</label>
-              <input type="text" name="username" id="username" autofocus>
+              <input type="text" name="username" id="username" autofocus autocomplete="off">
             </div><br>
             <div class="form-field">
               <label for="password">Password</label>

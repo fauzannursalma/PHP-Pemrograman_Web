@@ -21,6 +21,7 @@ if (isset($_POST["register"])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registerasi</title>
+  <link rel="icon" type="image/png" href="../assets/index/1.png">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
   <!-- Import google fonts -->
