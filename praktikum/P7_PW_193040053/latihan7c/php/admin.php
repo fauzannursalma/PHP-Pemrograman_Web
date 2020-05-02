@@ -76,7 +76,7 @@ if (isset($_GET['cari'])){
   	<h5 class="light black-text large center" id="buku">Daftar Buku</h5><br>
   	<div class="row">
       <div class="col s7"><a href="tambah.php" class="waves-effect waves-light blue darken-1 btn-small left">Tambah Data</a></div>
-      <form action="" method="get">
+      <form action="" method="POST">
       <div class="col s4">
           <input type="text" name="keyword" autofocus placeholder="Masukkan keyword pencarian..." autocomplete="off">
       </div>
