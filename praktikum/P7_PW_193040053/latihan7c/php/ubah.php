@@ -56,7 +56,7 @@ if (isset($_POST['ubah'])) {
       <div class="col s12 l9 offset-l1">
         <div class="card">
           <div class="card-action blue lighten-1 white-text center">
-            <h4>Form Tambah Data</h4>
+            <h4>Form Ubah Data</h4>
           </div>
           <div class="card-content">
           <form action="" method="POST">

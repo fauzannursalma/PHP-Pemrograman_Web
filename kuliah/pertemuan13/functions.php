@@ -14,7 +14,7 @@ function query($sql)
 	if (mysqli_num_rows($result) == 1) {
 		return mysqli_fetch_assoc($result);
 	}
-
+ 
 	$rows = [];
 	while ($row = mysqli_fetch_assoc($result)) {
 		$rows[] = $row;
@@ -134,7 +134,7 @@ function ubah($data)
 		$foto = $foto_lama;
 	} elseif ($foto_lama != 'nophoto.jpg' ) {
 		unlink('img/'. $data['foto_lama']);
-		// agar foto_lama yang != nohpoto.jpg terhapus diganti dengan foto baru+
+		// agar foto_lama yang != nophoto.jpg terhapus diganti dengan foto baru
 	}  
 
 	$queryubah = "UPDATE mahasiswa SET
@@ -242,13 +242,3 @@ function registrasi($data)
 	mysqli_query($conn, $query) or die(mysqli_error($conn));
 	return mysqli_affected_rows($conn);
 }
-
-
-
-
-
-
-
-
-
-?>
